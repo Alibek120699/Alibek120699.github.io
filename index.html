@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#langlist").val($("#langlist option").eq(0).val());
+		});
+
+		$(document).ready(function(){
+			$("#citylist").val($("#citylist option").eq(0).val());
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="header__wrapper">
+				<div class="header__logo">
+					<ul class="logo__list">
+						<li class="logo">
+							<a href="/" class="header__logo-link">
+								<img src="./css/data/logo.svg" alt="kinoplex">
+							</a>
+						</li>
+						<li class="logo">
+							<a href="/" class="header__logo-link">
+								<img src="./css/data/kinoplexx-logo.svg" alt="kinoplex">
+							</a>
+						</li>
+					</ul>
+				</div>
+	
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item">
+							<select id="citylist">
+								<option id="#cityoptions" value="Nur-Sultan">Нур-Султан</option>
+								<option id="#cityoptions" value="Almaty">Алматы</option>
+								<option id="#cityoptions" value="Shymkent">Шымкент</option>
+								<option id="#cityoptions" value="Aktau">Актау</option>
+								<option id="#cityoptions" value="Aktobe">Актобе</option>
+								<option id="#cityoptions" value="Atyrau">Атырау</option>
+								<option id="#cityoptions" value="Karaganda">Караганда</option>
+								<option id="#cityoptions" value="Kyzylorda">Кызылорда</option>
+								<option id="#cityoptions" value="Uralsk">Уральск</option>
+							</select>
+						</li>
+						<li class="header__item">
+							<a href="index.html" class="header__link active">Расписание</a>
+						</li>
+						<li class="header__item">
+							<a href="soon.html" class="header__link">Скоро</a>
+						</li>
+						<li class="header__item">
+							<a href="food.html" class="header__link">Еда и напитки</a>
+						</li>
+						<li class="header__item">
+							<a href="mykinopark.html" class="header__link">Мой Kinopark</a>
+						</li>
+					</ul>
+				</nav>
+
+				<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="#!" class="header__link">Вход/Регистрация</a>
+							</li>
+							<li class="header__item">
+								<select id="langlist">
+									<option id="#langoptions" value="ru">Русский</option>
+									<option id="#langoptions" value="kz">Qazaqsha</option>
+									<option id="#langoptions" value="eng">English</option>
+								</select>
+							</li>
+						</ul>
+					</nav>
+			</div>
+		</div>
+	</header>
+	<hr>
+	<main>
+		<div class="test">
+			
+		</div>
+	</main>
+</body>
+</html>
+
